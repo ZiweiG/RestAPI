@@ -3,10 +3,29 @@ I used three .java files to create restAPI. RestAPIInit would run and initialize
 
 
 Here are the instructions on how to run it:
-1)	To get a menu section by id //statement
-2)	Get all menu sections //statement
-3)	Add a new menu section/
-4)	Edit a menu section //statement
-5)	Delete a menu section/
+Firstly, compile the three program and run. 
+1)	To get a menu section by id
+    After running the program, using the following SELECT statement in SQlite:
+    SELECT DISTINCT
+     id
+    FROM
+     table; //(generic table name)
+2)	Get all menu sections
+    After running the program, using the following SELECT statement in SQlite:
+    SELECT
+     id,
+     name
+    FROM
+     warehouses; //(or assigned table name)
+3)	Add a new menu section
+    Use InsertApp function to initialize
+4)	Edit a menu section 
+    After running the program, using the following SELECT statement in SQlite:
+    INSERT INTO name
+    VALUES
+      ('Salad');
+5)	Delete a menu section
+    Run the deleteApp program with the id of the section
+
 
 
